@@ -1,1 +1,1 @@
-The Borad Game Boggle made in Java
+The Board Game Boggle made in Java
