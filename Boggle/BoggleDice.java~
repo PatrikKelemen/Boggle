@@ -1,0 +1,90 @@
+import java.io.*;
+
+// The "GameItem" class
+public class DieItem implements Serializable
+{
+  private String letterOne, letterTwo, letterThree, letterFour, letterFive, letterSix;        // All sides on dice
+  
+  // Constructor for assigning values to variables
+  public GameItem (String letter1, String letter2, String letter3, String letter4, String letter5, String letter6)
+  {
+    this.letterOne = letter1;
+    this.letterTwo = letter2;
+    this.letterThree = letter3;
+    this.letterFour = letter4;
+    this.letterFive = letter5;
+    this.letterSix = letter6;
+  }
+  
+  // Null Constructor
+  public GameItem ()
+  {
+    this.lettterOne = "";
+    this.letterTwo = "";
+    this.letterThree = "";
+    this.letterFour = "";
+    this.letterFive = "";
+  }
+  
+  public void setOne (String factor)
+  {
+    this.letterOne = factor;
+  }
+  
+  public void setTwo (String factor)
+  {
+    this.letterTwo = factor;
+  }
+  
+  public void setThree (String factor)
+  {
+    this.letterThree = factor;
+  }
+  
+  public void setFour (String factor)
+  {
+    this.letterFour = factor;
+  }
+  
+  public void setFive (String factor)
+  {
+    this.letterFive = factor;
+  }
+  
+  public void setSix (String factor)
+  {
+    this.letterSix = factor;
+  }
+  
+  public String getTitle ()
+  {
+    return this.gameTitle;
+  }
+  
+  public String getDev ()
+  {
+    return this.developerName;
+  }
+  
+  public String getGenre ()
+  {
+    return this.gameGenre;
+  }
+  
+  public String getPrice ()
+  {
+    return this.gamePrice;
+  }
+  
+  public String getRating ()
+  {
+    return this.gameRating;
+  }
+  
+  public String toString ()
+  {
+    String data;
+    data = gameTitle + " Developer: " + developerName + " Genre: " + gameGenre + " Price: " + gamePrice + " Rating: " + gameRating;
+    return data;
+  }
+}
